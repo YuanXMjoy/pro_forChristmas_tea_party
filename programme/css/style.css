@@ -49,15 +49,31 @@ body {
     width: 18rem;
 
 }
-@keyframes changetoleft
-{
-    0%   { right: 8%; top:14rem;}
-
-    100% { left:8%; top:14rem;}
+.success-box{
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    font-size: 3.3rem;
+    top:10rem;
 }
-@-webkit-keyframes change /* Safari and Chrome */
-{
-    0%   { left:0px; top:0px;}
+.hua-img-box{
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:20rem;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(180deg);}
+}
 
-    100% { left:0px; top:0px;}
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(365deg);}
 }
