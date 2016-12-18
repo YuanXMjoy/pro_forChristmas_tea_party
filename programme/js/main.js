@@ -17,7 +17,7 @@ $(document).ready(function(){
         countYong++;
         if(countYong==1){
             $(".left-img-yi").attr("src","css/selected.png");
-            $(".btn-img").attr("src","css/orange.png")
+            $(".btn-img").attr("src","css/Group2.png")
         }
         if(countYong%2==1){
             if(sWidth<=330) {
