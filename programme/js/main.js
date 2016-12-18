@@ -2,14 +2,18 @@
 /**
  * Created by JOYyuan on 16/12/17.
  */
+
 $(document).ready(function(){
+
+
     var countYi=0;
     var countYong=0;
-    var i=1;
+
 
     var sWidth=window.screen.availWidth;
-    console.log(sWidth);
+
     $(".right-img-yong").click(function(){
+
         countYong++;
         if(countYong==1){
             $(".left-img-yi").attr("src","css/selected.png");
@@ -70,6 +74,12 @@ $(document).ready(function(){
         if(countYi==1){
             $(".left-img-yi").attr("src","css/selected.png");
         }
+    });
+    $(".btn-img").click(function(){
+        if(countYi>0||countYong>0){
+            window.location.href="success.html";
+        }
+
     });
 
 
